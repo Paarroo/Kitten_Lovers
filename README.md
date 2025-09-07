@@ -6,12 +6,16 @@
 
 ## 📋 Quick Start
 
-| Section                              | Description                                  |
-| ------------------------------------ | -------------------------------------------- |
-| [🛠️ Tech Stack](#️-technical-stack)  | Ruby on Rails, PostgreSQL, Stripe, Avo Admin |
+<div align="center">
+
+| Section | Description |
+|---------|-------------|
+| [🛠️ Tech Stack](#️-technical-stack) | Ruby on Rails, PostgreSQL, Stripe, Avo Admin |
 | [🚀 Installation](#-getting-started) | Setup instructions and environment variables |
-| [📊 Database](#database-design)      | Schema and relationships                     |
-| [📸 Screenshots](#-screenshots)      | Application preview (desktop & mobile)       |
+| [📊 Database](#database-design) | Schema and relationships |
+| [📸 Screenshots](#-screenshots) | Application preview (desktop & mobile) |
+
+</div>
 
 ---
 
