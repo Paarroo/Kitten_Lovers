@@ -82,3 +82,43 @@ body {
   top: 100px;
   padding-left: 600px;
 }
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .index-title {
+    padding-left: 0;
+    top: 50px;
+  }
+  
+  .filter-btn {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .cat-card {
+    height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .index-title {
+    top: 30px;
+  }
+  
+  .index-title h2 {
+    font-size: 1.5rem;
+  }
+  
+  .index-title p {
+    font-size: 0.9rem;
+  }
+  
+  .filter-btn {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.85rem;
+  }
+  
+  .cat-card {
+    height: 180px;
+  }
+}

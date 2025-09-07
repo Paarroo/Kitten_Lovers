@@ -1,6 +1,7 @@
-/* Breakpoints */
-$breakpoint-tablet: 768px;
-$breakpoint-mobile: 480px;
+/* Breakpoints unified with Bootstrap */
+$breakpoint-lg: 992px;      /* Bootstrap lg */
+$breakpoint-tablet: 768px;  /* Bootstrap md */
+$breakpoint-mobile: 576px;  /* Bootstrap sm (unified from 480px) */
 $breakpoint-small: 320px;
 
 /* Colors  auth */
@@ -26,6 +27,12 @@ $auth-bg: #f8f6f3;
 
 @mixin mobile {
   @media (max-width: #{$breakpoint-mobile}) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (max-width: #{$breakpoint-lg}) {
     @content;
   }
 }

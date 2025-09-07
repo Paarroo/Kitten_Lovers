@@ -2,14 +2,16 @@
 
   
   <div class="beige-section py-5 w-100" style="margin-top: 15rem;">
-    <div class="container">
+    <div class="container-responsive">
       <h1 class="text-center mb-5 fw-bold">Mon Panier</h1>
 
       <% if @cart_items.any? %>
-        <div class="d-flex justify-content-center">
-          <div class="grid-responsive">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 justify-content-center">
             <% @cart_items.each do |cart_item| %>
-              <div class="card shadow-sm p-3 rounded text-center" style="width: 300px;">
+              <div class="col">
+                <div class="card shadow-sm p-3 rounded text-center h-100">
                 <% if cart_item.item.image_url.present? %>
                   <%= image_tag(cart_item.item.image_url, alt: cart_item.item.title, class: "card-img-top mb-3", style: "object-fit: cover; height: 200px;") %>
                 <% end %>
@@ -23,8 +25,10 @@
                       data: { confirm: "Supprimer cet article du panier ?" },
                       class: "btn btn-outline-danger mt-2" %>
                 </div>
+                </div>
               </div>
             <% end %>
+            </div>
           </div>
         </div>
 

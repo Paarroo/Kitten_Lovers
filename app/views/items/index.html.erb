@@ -3,7 +3,7 @@
 
   <!-- Title -->
   <div class="container-fluid text-center">
-    <div class="index-title ms-5">
+    <div class="index-title">
       <h2 class="display-5 fw-bold mb-3">Nos offres miaougnifiques</h2>
       <p class="text-muted mb-5">
         Découvrez nos collections exclusives de chats irrésistibles, prêts à réchauffer le cœur.<br>
@@ -14,7 +14,7 @@
 
   <!-- Background band color -->
   <div class="beige-section w-100 py-5">
-    <div class="container">
+    <div class="container-responsive">
 
       <!-- Filters -->
       <div class="d-flex justify-content-center gap-3 mb-5">
@@ -23,7 +23,7 @@
       </div>
 
       <!-- Cards grid -->
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 g-md-5">
         <% @items.each do |item| %>
           <div class="col">
             <div class="cat-card position-relative overflow-hidden shadow-sm rounded-4">

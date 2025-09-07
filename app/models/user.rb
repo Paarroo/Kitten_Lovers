@@ -7,9 +7,7 @@ class User < ApplicationRecord
   has_many :purchased_items, dependent: :destroy
   has_many :purchased_photos, through: :purchased_items, source: :item
 
-
   after_create :create_cart
-
 
   def admin?
     is_admin
@@ -18,6 +16,7 @@ class User < ApplicationRecord
   def has_purchased?(item)
     purchased_items.exists?(item: item)
   end
+
   def full_name
     "#{first_name} #{last_name}".strip
   end
